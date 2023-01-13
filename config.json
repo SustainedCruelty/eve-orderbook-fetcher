@@ -1,0 +1,12 @@
+{
+    "retentionPeriod": 0,
+    "interval": 2,
+    "regions": [
+        10000043
+    ],
+    "citadels": [
+        1023968078820
+    ],
+    "clientId": "e499e16d7e4641e08ef57eb678ebce7d",
+    "refreshToken": "7cx0eGw15Uyl7Qur1Xkbog=="
+}
