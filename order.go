@@ -23,7 +23,7 @@ type MarketOrder struct {
 
 // write the MarketOrder as a new line to an existing csv file
 func (order *MarketOrder) WriteAsCSV(writer io.Writer) {
-	row := fmt.Sprintf("%d,%d,%d,%d,%f,%s,%v,%s,%d,%d,%d,%d",
+	row := fmt.Sprintf("%d,%d,%d,%d,%f,%s,%v,%d,%d,%d,%d,%d",
 		order.OrderID,
 		order.TypeID,
 		order.SystemID,
@@ -31,7 +31,7 @@ func (order *MarketOrder) WriteAsCSV(writer io.Writer) {
 		order.Price,
 		order.Range,
 		order.IsBuyOrder,
-		order.Issued,
+		order.Issued.UTC().Unix(),
 		order.Duration,
 		order.MinVolume,
 		order.VolumeRemain,
